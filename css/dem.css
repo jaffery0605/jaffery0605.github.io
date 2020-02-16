@@ -1,0 +1,694 @@
+/* -------- tags ---------- */
+* {
+  box-sizing: border-box;
+}
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #18465c;
+    
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #182069;
+     font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    padding: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+  } 
+  html {
+    scroll-behavior: smooth;
+  }
+  p{
+    margin-bottom: 0px;
+  }
+  form { 
+    margin: 0 auto; 
+    width:500px;
+    }
+/*---------------------- end of tag styling--------------------- */
+
+/*  ------------------ class------------------------------*/
+.container-i {
+  width: 100%;
+  height:100%;
+}
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 6px;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-linkedin:hover {
+  background:white;
+  color:  #007bb5;
+}
+.fa-github {
+  background: #f1f1f1;
+  color: #2c2525;
+}
+.fa-github:hover {
+  background: #2c2525 ;
+  color:  #f1f1f1;
+}
+
+.fa-instagram {
+  background: linear-gradient(158deg, #1880d4 0%, #b11c1c 35%, #c76d19 85%);
+  color: white;
+}
+.fa-instagram:hover {
+  background: white;
+  color:  linear-gradient(158deg, #1880d4 0%, #b11c1c 35%, #c76d19 85%);
+}
+.fa-telegram {
+  background: #007bb5;
+  color: white;
+}
+.fa-telegram:hover {
+  background:white;
+  color:  #007bb5;
+}
+.btn{
+  margin: 10px;
+}
+.success {
+  border-color: #18465c;
+  color: #1880d4;
+  width: 200px;
+  height: 60px;
+}
+.success:hover {
+  background-color: #18465c;
+  color: white;
+}
+.success-c {
+  background-color: #18465c;
+  color: white;
+  width: 200px;
+  height: 60px;
+}
+.success-c:hover {
+  background-color: white;
+  color:  #18465c;
+}
+.hab-color{
+  background-color: #246380;
+}
+  .content {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.363); /* Black background with 0.5 opacity */
+    color: #18465c;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    padding: 80px;
+  }
+  .card-body{
+      position: absolute;
+      bottom: 0;
+
+      background: rgba(0, 0, 0, 0.363); /* Black background with 0.5 opacity */
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+    
+  }
+  .card-deck{
+    margin-bottom: 20px;
+  }
+  .ece{
+    font-size: 25px; font-family: Candara;color: #18227e;
+  }
+  .greetings{
+    font-size:30px;font-family: Candara;color: #18227e;
+  }
+  .iam{
+    font-size: 80px;font-family: Candara;color:#18227e;padding-right: 10px;
+  }
+  .name{
+    font-size: 80px;font-family: Candara;color:antiquewhite;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background: linear-gradient(55deg, #1a2429 0%, #132a35 51%, #18465c 85%);
+    
+    border: 0;
+    font-size: 12px !important;
+    
+    letter-spacing: 4px;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #18465c !important;
+    background-color: #fff !important;
+  }
+
+  .progress-container {
+    width: 100%;
+    height: 2px;
+    background: rgba(204, 204, 204, 0);
+  }
+  
+  .progress-bar {
+    height: 2px;
+    background: linear-gradient(55deg, #18465c 0%, #256b8b 51%, #1899d4 85%);
+    width: 0%;
+  }
+  .person {
+    border-color: gray;
+    margin-bottom: 10px;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+    opacity: 0.7;
+    box-shadow: 0.5em 0.5em 0.7em #777;
+  }
+  .progress{
+    height: 12px;
+    width: 300px;
+    margin-bottom: 16px;
+  }
+
+
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #18465c;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container-q {
+    padding: 10px 40px;
+
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container-q::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: -17px;
+    background-color: #18465c;
+    border: 3px solid #1899d4;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content-q {
+    padding: 20px 30px;
+    background:linear-gradient(55deg, #709aaf 0%, #85b0c4 51%, #b1c9d4 85%);
+    position: relative;
+    border-radius: 6px;
+    font-family: Candara;
+  }
+  .foot{
+    margin-bottom:0;
+    background:linear-gradient(55deg, #1a2429 0%, #132a35 51%, #18465c 85%);
+    color: aliceblue;
+  }
+  /*----------------end of class styling ------------------------*/
+
+
+  /* ---------------- ids ---------------------*/
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 10px;
+    border: none;
+    outline: none;
+    background: linear-gradient(55deg, #1a2429 0%, #132a35 51%, #18465c 85%);
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 50%;
+  }
+  
+  #myBtn:hover {
+    background:linear-gradient(55deg, #709aaf 0%, #85b0c4 51%, #b1c9d4 85%);
+    color: white;
+    opacity:0.7;
+  }
+  #achievments{
+    font-family: Candara;
+  }
+ 
+  #welcome {
+    margin-bottom:0;
+    background: url("../images/intro-img/mypic.jpg") no-repeat center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    display: table;
+    min-height: 600px;
+    position: relative;
+    text-align: center;
+  }
+  #projects{
+    background: linear-gradient(55deg,  #1899d4 0%, #256b8b 51%, #256b8b 85%);
+   }
+   #resume{
+     background: linear-gradient(55deg, #256b8b 0%, #256b8b 51%, #1899d4 85%);
+   }
+   #profile{
+     padding-left: 130px;
+   }
+   #interests{
+    background: whitesmoke;
+   }
+  /* ----------------media queries ------------*/
+  
+  @media only screen and (min-width:1024px) {
+    #welcome {
+      background: url("../images/intro-img/mypic.jpg") no-repeat center bottom;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      background-attachment: fixed;
+    width: 100%;
+      height: 100%;
+      display: table;
+      min-height: 500px;
+    position: relative;
+    text-align: center;
+    }
+    .card-body{
+      font-size: 10px;
+    }
+    .progress{
+      width: 240px;
+    }
+
+    
+  }
+  @media only screen and (max-width:1024px) {
+    #welcome {
+      background: url("../images/intro-img/myp1.jpg") no-repeat center bottom;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      background-attachment: fixed;
+      width: 100%;
+      height: 100%;
+      display: table;
+      min-height: 600px;
+    position: relative;
+    text-align: center;
+    }
+   
+    .greetings{
+      color: #256b8b;
+      font-size: 30px;
+    }
+    .iam{
+      color: #256b8b;
+    }
+    .ece{
+      color: #256b8b;
+    }
+    .card-body{
+      font-size: 5.5px;
+    }
+    #profile{
+      padding-left: 100px;
+    }
+    .progress{
+      width: 220px;
+    }
+  }
+  @media only screen and (max-width:1125px) {
+    .card-body{
+      font-size: 5px;
+    }
+    #profile{
+      padding-left: 80px;
+    }
+    .progress{
+      width: 215px;
+    }
+  }
+  @media only screen and (max-width:900px) {
+    .card-body{
+      font-size: 4.5px;
+    }
+    #profile{
+      padding-left: 60px;
+    }
+    .progress{
+      width: 215px;
+    }
+    .greetings{
+      color: antiquewhite;
+      font-size: 25px;
+    }
+    .iam{
+      color: antiquewhite;
+      font-size: 70px;
+    }
+    .name{
+      color: #256b8b;
+      font-size: 70px;
+    }
+    .ece{
+      color: antiquewhite;
+      font-size: 22px;
+    }
+    .content{
+      padding: 50px;
+    }
+    .success {
+      width: 180px;height: 40px;
+    }
+    .btn{
+      margin: 2px;
+    }
+    form { 
+      margin: 0 auto; 
+      width:400px;
+      }
+    
+  }
+  @media only screen and (max-width:576px) {
+    #welcome {
+      background: url("../images/intro-img/myp.jpg") no-repeat center bottom;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      background-attachment: fixed;
+    width: 100%;
+      height: 100%;
+      display: table;
+      min-height: 450px;
+    position: relative;
+    text-align: center;
+    }
+    .card-body{
+      font-size: 15px;
+    }
+    #profile{
+      padding-left: 40px;
+    }
+    .progress{
+      width: 230px;
+    }
+    .greetings{
+      color: antiquewhite;
+      font-size: 20px;
+    }
+    .iam{
+      color: antiquewhite;
+      font-size: 60px;
+    }
+    .name{
+      color: #256b8b;
+      font-size: 60px;
+    }
+    .ece{
+      color: antiquewhite;
+      font-size: 12px;
+    }
+    .content-q{
+      padding: 10px;
+
+    }
+    .content{
+      padding: 20px;
+    }
+    .timeline::after {
+      left: 31px;
+      }
+      
+      /* Full-width containers */
+      .container-q {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+      }
+      
+      /* Make sure that all arrows are pointing leftwards */
+      .container-q::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+      }
+    
+      /* Make sure all circles are at the same spot */
+      .left::after, .right::after {
+      left: 15px;
+      }
+      
+      /* Make all right containers behave like the left ones */
+      .right {
+      left: 0%;
+      }
+      .btn{
+        margin: 5px;
+      }
+      form { 
+        margin: 0 auto; 
+        width:300px;
+        }
+    
+    
+  }
+  @media only screen and (max-width:320px){
+    .progress{
+      width: 200px;
+    }
+    #profile{
+      padding-left: 20px;
+    }
+    .content-q{
+      padding: 10px;
+      padding-left: 0px;
+
+    }
+    .content{
+      padding: 10px;
+    }
+    .fa {
+      padding: 10px;
+      font-size:5px;
+      width: 25px;
+      text-align: center;
+      text-decoration: none;
+      margin: 2px;
+      border-radius: 50%;
+    }
+    .fa:hover {
+      opacity: 0.7;
+      font-size: 22px;
+      text-decoration: none;
+    }
+    form { 
+      margin: 0 auto; 
+      width:300px;
+      }
+      .iam{
+        color: antiquewhite;
+        font-size: 50px;
+      }
+      .name{
+        color: #256b8b;
+        font-size: 50px;
+      }
+    
+  }
+ 
+  /*----------------------best background-------------*/
+  .input-group {
+    position: relative;
+    margin: 40px 0 10px;
+  }
+  
+  input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 500px;
+    background:transparent;
+    border: none;
+    border-bottom: 1px solid #18465c;
+  }
+  textarea {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 500px;
+    background:transparent;
+    border: none;
+    border-bottom: 1px solid #18465c;
+  }
+
+  
+  input:focus {
+    outline: none;
+  }
+  
+  label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #4285f4;
+}
+
+.bar {
+  position: relative;
+  display:block;
+  width:500px;
+}
+
+.bar:before,
+.bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #4285f4;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.bar:after {
+  left: 50%;
+}
+.bar:before {
+  right: 50%;
+}
+
+
+
+
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 300px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+@-webkit-keyframes inputHighlighter {
+  from { background: #4285f4; }
+  to   { width: 0; background: transparent; }
+}
+@-moz-keyframes inputHighlighter {
+  from { background: #4285f4; }
+  to   { width: 0; background: transparent; }
+}
+@keyframes inputHighlighter {
+  from { background: #4285f4; }
+  to   { width: 0; background: transparent; }
+}
