@@ -457,7 +457,7 @@ body {
   }
   @media only screen and (max-width:576px) {
     #welcome {
-      background: url("../images/intro-img/myp.jpg") no-repeat center bottom;
+      background: url("../images/intro-img/myp1.jpg") no-repeat center bottom;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
